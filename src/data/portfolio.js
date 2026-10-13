@@ -63,6 +63,8 @@ export const TECH_META = {
   "Angular Material": { color: "#dd0031", Icon: PaletteIcon },
   "ngx-charts": { color: "#a855f7", Icon: BarChartIcon },
   PapaParse: { color: "#4a4a4a", Icon: FileTextIcon },
+  "Next.js": { color: "#000000", Icon: WindowIcon },
+  "math.js": { color: "#f58220", Icon: CodeIcon },
   Playwright: { color: "#2ead33", Icon: CodeIcon },
   Chromium: { color: "#4285f4", Icon: WindowIcon },
   "M.B.A. — Systems Management": {
@@ -245,6 +247,37 @@ export const projects = [
     ],
   },
   {
+    title: "Numeriq",
+    tech: ["Next.js", "React", "TypeScript", "math.js", "Node.js", "CSS3"],
+    description:
+      "Browser-based mathematics workspace featuring a scientific calculator, equation and quadratic solvers, statistics, matrix operations, unit conversion, percentage calculations, function graphing, calculus, complex numbers, vectors, and finance calculators with persistent theme and accent color preferences.",
+    links: [
+      {
+        label: "Live Demo",
+        url: "https://saravanansaranraj27.github.io/numeriq",
+        type: "live",
+      },
+      {
+        label: "Code",
+        url: "https://github.com/saravanansaranraj27/numeriq",
+        type: "code",
+      },
+    ],
+  },
+  {
+    title: "Numeriq Playwright",
+    tech: ["Playwright", "TypeScript", "Node.js", "Chromium"],
+    description:
+      "Dedicated end-to-end testing suite for the Numeriq mathematics workspace, covering sidebar navigation, calculator interactions, equation solving, finance tools, graphing, global search, keyboard interactions, workspace routes, and responsive layouts with automated browser testing and failure diagnostics.",
+    links: [
+      {
+        label: "Code",
+        url: "https://github.com/saravanansaranraj27/numeriq-playwright",
+        type: "code",
+      },
+    ],
+  },
+  {
     title: "Event Booking System",
     tech: [
       "Spring Boot",
@@ -325,7 +358,7 @@ export const projects = [
     title: "DevTools",
     tech: ["Angular", "TypeScript", "RxJS", "Node.js", "SCSS"],
     description:
-      "Responsive utility suite featuring a searchable developer cheat sheet, JSON formatter, and Base64 encoder",
+      "Responsive utility suite featuring a searchable developer cheat sheet, JSON formatter, and Base64 encoder.",
     links: [
       {
         label: "Live Demo",
