@@ -67,6 +67,9 @@ export const TECH_META = {
   "math.js": { color: "#f58220", Icon: CodeIcon },
   Playwright: { color: "#2ead33", Icon: CodeIcon },
   Chromium: { color: "#4285f4", Icon: WindowIcon },
+  "Android TV": { color: "#3ddc84", Icon: WindowIcon },
+  ADB: { color: "#3ddc84", Icon: CodeIcon },
+  Markdown: { color: "#8592ad", Icon: FileTextIcon },
   "M.B.A. — Systems Management": {
     color: "#1f6feb",
     Icon: FileTextIcon,
@@ -100,6 +103,14 @@ export const CHIP_ICONS = {
   DEV: CodeIcon,
   CLOUD: CloudIcon,
   "AI TOOLS": SparkleIcon,
+  DOCS: FileTextIcon,
+  TESTING: FlaskIcon,
+  MERGED: GitBranchIcon,
+  PR: GitBranchIcon,
+  ABOUT: CodeIcon,
+  SUMMARY: FileTextIcon,
+  FILES: FileTextIcon,
+  REVIEW: UsersIcon,
 };
 
 export const personalInfo = {
@@ -118,6 +129,7 @@ export const navLinks = [
   { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
+  { name: "Open Source", href: "#open-source" },
   { name: "Education", href: "#education" },
   { name: "Badges", href: "#certifications" },
 ];
@@ -479,6 +491,80 @@ export const projects = [
       {
         label: "Code",
         url: "https://github.com/saravanansaranraj27/task-manager-inventory",
+        type: "code",
+      },
+    ],
+  },
+];
+
+export const openSource = [
+  {
+    project: "CleanYourTV",
+    repo: "Gathin23/cleanyourtv",
+    role: "Contributor",
+    status: "Merged",
+    period: "Oct 25, 2026",
+    prNumber: 1650,
+    prTitle: "docs: add Xiaomi MiTV4I device notes",
+    branch: "main",
+    changes: "+24 -0, 2 files",
+    mergedBy: "Gathin (Owner)",
+    about:
+      "CleanYourTV removes bloatware from Android TV and Google TV devices over Wi-Fi and replaces the ad-filled home screen with a clean launcher. It requires no root access or cable, uninstalls nothing, and supports a one-line restore.",
+    summary:
+      "Contributed a launcher-only device note and a README index entry for the Xiaomi MiTV4I. The launcher and app order were verified on the TV, and no debloat list was tested.",
+    details: [
+      {
+        tag: "ABOUT",
+        chip: "chip-rca",
+        text: "CleanYourTV removes bloatware from Android TV and Google TV devices over Wi-Fi and replaces the ad-filled home screen with a clean launcher. It requires no root access or cable, uninstalls nothing, and supports a one-line restore.",
+      },
+      {
+        tag: "SUMMARY",
+        chip: "chip-team",
+        text: "Contributed a launcher-only device note and a README index entry for the Xiaomi MiTV4I. The launcher and app order were verified on the TV, and no debloat list was tested.",
+      },
+      {
+        tag: "PR",
+        chip: "chip-team",
+        text: "Pull request #1650, titled “docs: add Xiaomi MiTV4I device notes,” was merged into main on Oct 25, 2026 by the repository owner, Gathin.",
+      },
+      {
+        tag: "FILES",
+        chip: "chip-rca",
+        text: "Wrote the device note docs/devices/xiaomi-mitv4i-magnolia.md and added its index entry to examples/README.md. The change totals 24 added lines and no deletions across two files (size/S).",
+      },
+      {
+        tag: "TESTING",
+        chip: "chip-automation",
+        text: "Tested on a Xiaomi MiTV4I (magnolia) running Android TV 9 / API 28, firmware PI.3698. Confirmed CleanYourTV as the Home launcher; the Inputs menu showed HDMI 1–3 and AV, and YouTube was available.",
+      },
+      {
+        tag: "TESTING",
+        chip: "chip-automation",
+        text: "Configured the dock as Live TV, YouTube, TV Manager and Media Player, and reordered the app grid to Disney+ Hotstar, Prime Video, Sony LIV, AirConsole, Google Play Store, YouTube Music, Google Play Movies & TV and Sensy TV Guide. The dock order was set in the local config.xml, and the app-grid order was saved on the TV. Both orders were verified on screen.",
+      },
+      {
+        tag: "TESTING",
+        chip: "chip-automation",
+        text: "Temporarily enabled network ADB for the setup and layout changes, then disabled it and confirmed that the TV's ADB port was closed. No debloating or DNS changes were made, and multi-day use and other firmware versions were not tested. Automated tests were not run, as this was a documentation-only change.",
+      },
+      {
+        tag: "REVIEW",
+        chip: "chip-incident",
+        text: "The maintainer-bot review suggested merging the pull request. The repository owner, Gathin, then merged it, noting “Good to have the MiTV4I on record,” and welcomed a tested debloat list for magnolia as a follow-up.",
+      },
+    ],
+    tech: ["Git", "Android TV", "ADB", "Markdown"],
+    links: [
+      {
+        label: "Merged PR #1650",
+        url: "https://github.com/Gathin23/cleanyourtv/pull/1650",
+        type: "code",
+      },
+      {
+        label: "Repository",
+        url: "https://github.com/Gathin23/cleanyourtv",
         type: "code",
       },
     ],

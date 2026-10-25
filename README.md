@@ -12,7 +12,7 @@
 
 ### 🌐 [Live Demo](https://saravanansaranraj27.github.io/saran-raj-saravanan-portfolio)
 
-This is the personal portfolio of Saran Raj Saravanan, a Full Stack Developer based in Dindigul, India. It presents an about section, categorized skills, work experience, projects, education, and certifications in a single-page site with system-aware dark and light themes.
+This is the personal portfolio of Saran Raj Saravanan, a Full Stack Developer based in Dindigul, India. It presents an about section, categorized skills, work experience, projects, open-source contributions, education, and certifications in a single-page site with system-aware dark and light themes.
 
 All content lives in one structured data file, separate from the presentational components. The site is a static build with no backend, deployed to GitHub Pages.
 
@@ -38,16 +38,17 @@ All content lives in one structured data file, separate from the presentational 
 
 ## Site content
 
-The site is a single page made of **6 sections**, all rendered from `src/data/portfolio.js`.
+The site is a single page made of **7 sections**, all rendered from `src/data/portfolio.js`.
 
-### Sections — 6 anchors
+### Sections — 7 anchors
 
 | Section    | Anchor            | Content                                                               |
 | ---------- | ----------------- | --------------------------------------------------------------------- |
 | About      | `#about`          | Introduction, location, and resume View and Download actions          |
 | Skills     | `#skills`         | 7 skill categories with icon-backed technology tags                   |
 | Experience | `#experience`     | Professional experience                                               |
-| Projects   | `#projects`       | 12 featured projects with technology tags and Code or Live Demo links |
+| Projects   | `#projects`       | 14 featured projects with technology tags and Code or Live Demo links |
+| Open Source | `#open-source`   | 1 merged open-source contribution (CleanYourTV, PR #1650)             |
 | Education  | `#education`      | 2 degrees                                                             |
 | Badges     | `#certifications` | 2 certifications                                                      |
 
@@ -71,6 +72,7 @@ The site is a single page made of **6 sections**, all rendered from `src/data/po
 | `skills`         | Skill categories and their technologies              |
 | `experience`     | Work experience entries                              |
 | `projects`       | Project titles, tech stacks, descriptions, and links |
+| `openSource`     | Open-source contributions, details, and PR links     |
 | `education`      | Degrees and institutions                             |
 | `certifications` | Certifications and issuers                           |
 
@@ -146,11 +148,12 @@ http://localhost:5173/saran-raj-saravanan-portfolio/
 
 ### Workflow
 
-1. Open the site and use the header navigation to jump to About, Skills, Experience, Projects, Education, or Badges
+1. Open the site and use the header navigation to jump to About, Skills, Experience, Projects, Open Source, Education, or Badges
 2. Use the theme toggle in the header to switch between dark and light mode
 3. Use **View Resume** or **Download Resume** in the About section to open or save the PDF
 4. Copy the email address with the copy button
 5. Open any project's Code or Live Demo link from the Projects section
+6. Open the merged pull request link from the Open Source section
 
 ### Preview the production build
 
@@ -179,14 +182,14 @@ saran-raj-saravanan-portfolio/
 │   │       └── Footer.jsx                   # Site footer
 │   ├── data/
 │   │   └── portfolio.js                     # Personal info, skills, experience, projects,
-│   │                                        # education, and certifications
+│   │                                        # open source, education, and certifications
 │   ├── hooks/
 │   │   └── useSystemTheme.js                # Detects the OS light or dark preference
 │   ├── layouts/
 │   │   └── MainLayout.jsx                   # Page shell: header, content, footer
 │   ├── pages/
 │   │   ├── Home/
-│   │   │   └── Home.jsx                     # All six page sections
+│   │   │   └── Home.jsx                     # All seven page sections
 │   │   └── NotFound/
 │   │       └── NotFound.jsx                 # Not-found page (not wired to a router)
 │   ├── styles/
@@ -245,7 +248,7 @@ npm run deploy
 
 ## Customization
 
-Update the content by editing the `personalInfo`, `navLinks`, `skills`, `experience`, `projects`, `education`, and `certifications` exports in `src/data/portfolio.js`. No component changes are needed for content updates.
+Update the content by editing the `personalInfo`, `navLinks`, `skills`, `experience`, `projects`, `openSource`, `education`, and `certifications` exports in `src/data/portfolio.js`. No component changes are needed for content updates.
 
 ### Add or update a project
 

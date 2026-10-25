@@ -16,6 +16,7 @@ import {
   certifications,
   education,
   experience,
+  openSource,
   personalInfo,
   projects,
   skills,
@@ -281,6 +282,75 @@ const Home = ({ emailCopied, onCopyEmail }) => (
                     ))}
                   </div>
                 )}
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="open-source" className="section">
+      <div className="container">
+        <Reveal>
+          <h2>Open Source Contributions</h2>
+        </Reveal>
+
+        <div className="timeline">
+          {openSource.map((item, index) => (
+            <Reveal key={index} delay={index * 100} className="timeline-item">
+              <div className="experience-card">
+                <div className="exp-header-group">
+                  <div className="exp-header">
+                    <h3>{item.project}</h3>
+
+                    <span className="company opensource-company">
+                      @ {item.role}
+                    </span>
+
+                    <span className="date">
+                      {item.status} · {item.period}
+                    </span>
+                  </div>
+
+                  <button
+                    type="button"
+                    className="client-tag client-tag-opensource"
+                    style={{ textTransform: "none" }}
+                  >
+                    <BriefcaseIcon />
+                    {item.repo}
+                  </button>
+                </div>
+
+                <ul className="achievements-list">
+                  {item.details.map((detail, i) => (
+                    <li key={i} className="achievement-row">
+                      <ChipButton tag={detail.tag} chipClass={detail.chip} />
+                      <span className="achievement-text">{detail.text}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="tech-stack">
+                  {item.tech.map((t, i) => (
+                    <TechBadgeButton key={i} label={t} />
+                  ))}
+                </div>
+
+                <div className="project-links">
+                  {item.links.map((link, i) => (
+                    <a
+                      key={i}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link link-code"
+                    >
+                      <GitHubIcon />
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
               </div>
             </Reveal>
           ))}

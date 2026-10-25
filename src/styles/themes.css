@@ -27,6 +27,7 @@ html[data-theme="dark"] {
   --bharathidasan-color: #c4b5fd;
   --microsoft-color: #f14f21;
   --capgemini-color: #17abda;
+  --opensource-color: #3ddc84;
   --accent-heading: #2dd4bf;
   --shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.45);
   --hero-glow-1: #f5a62312;
@@ -65,6 +66,7 @@ html[data-theme="light"] {
   --bharathidasan-color: #4c1d95;
   --microsoft-color: #b83815;
   --capgemini-color: #005585;
+  --opensource-color: #1a7f4b;
   --accent-heading: #0e8a7d;
   --shadow: 0 8px 24px -10px rgba(20, 24, 40, 0.12);
   --hero-glow-1: #b5760f0d;
